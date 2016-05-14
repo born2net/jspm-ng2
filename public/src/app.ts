@@ -1,3 +1,4 @@
+alert('test')
 import {bootstrap} from 'angular2/platform/browser';
 import {Component, Injectable} from 'angular2/core';
 

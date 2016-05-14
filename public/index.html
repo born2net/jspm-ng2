@@ -14,12 +14,13 @@
       var readyForMainLoad
       if (location.origin.match(/localhost/)) {
        System.trace = true
+		  alert('starting 1');
        readyForMainLoad = System.import('capaj/systemjs-hot-reloader').then(function(HotReloader){
          hr = new HotReloader.default('http://localhost:9089')  // chokidar-socket-emitter port
        })
       }
       Promise.resolve(readyForMainLoad).then(() => {
-        System.import('reflect-metadata')
+		  System.import('reflect-metadata')
         .then(function(){System.import('zone.js')})
         .then(function(){System.import('src/app')})
       })
