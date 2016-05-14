@@ -1,6 +1,5 @@
 System.config({
     baseURL: "/",
-    defaultJSExtensions: true,
     transpiler: "plugin-typescript",
     typescriptOptions: {
         "module": "commonjs",
