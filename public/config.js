@@ -3,7 +3,7 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "plugin-typescript",
   typescriptOptions: {
-    "module": "commonjs",
+    "module": "system",
     "defaultExtension": "ts",
     "emitDecoratorMetadata": true,
     "tsconfig": true,
