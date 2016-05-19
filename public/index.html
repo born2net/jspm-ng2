@@ -14,9 +14,7 @@
       var readyForMainLoad
       if (location.origin.match(/localhost/)) {
        System.trace = true
-		  alert('starting 1');
        readyForMainLoad = System.import('capaj/systemjs-hot-reloader').then(function(HotReloader){
-			alert('starting 2');
          hr = new HotReloader.default('http://localhost:9089')  // chokidar-socket-emitter port
        })
       }

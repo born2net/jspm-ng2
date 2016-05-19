@@ -1,11 +1,11 @@
-alert('app start')
 import {bootstrap} from 'angular2/platform/browser';
 import {Component, Injectable} from 'angular2/core';
 
+var hr;
 
 @Injectable()
 class ImagesFactory {
-    getUrls(): Array {
+    getUrls(): any {
         let url = 'http://www.reddit.com/r/perfectloops/top.json?sort=top&t=week'
         return fetch(url)
             .then(response => response.json())
